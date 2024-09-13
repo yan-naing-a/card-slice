@@ -6,50 +6,64 @@
     <title>Document</title>
     <!--Linking custom CSS-->
     <link rel="stylesheet" href="style.css" />
+
+    <!--Linking SwiperJS CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <div class="container">
+    <div class="container swiper">
       <div class="slider-wrapper">
-        <div class="card-list">
-          <div class="card-item">
+        <div class="card-list swiper-wrapper">
+          <div class="card-item swiper-slide">
             <img src="images/img-1.jpg" alt="user image" class="user-image" />
             <h2 class="user-name">John Doe</h2>
             <p class="user-profession">Software developer</p>
             <button class="message-button">message</button>
           </div>
-          <div class="card-item">
+          <div class="card-item swiper-slide">
             <img src="images/img-2.jpg" alt="user image" class="user-image" />
             <h2 class="user-name">Haylar</h2>
             <p class="user-profession">UI/UX designer</p>
             <button class="message-button">message</button>
           </div>
-          <div class="card-item">
+          <div class="card-item swiper-slide">
             <img src="images/img-3.jpg" alt="user image" class="user-image" />
             <h2 class="user-name">Naytan</h2>
             <p class="user-profession">Graphic designer</p>
             <button class="message-button">message</button>
           </div>
-          <div class="card-item">
+          <div class="card-item swiper-slide">
             <img src="images/img-4.jpg" alt="user image" class="user-image" />
             <h2 class="user-name">David Jone</h2>
             <p class="user-profession">Backend developer</p>
             <button class="message-button">message</button>
           </div>
-          <div class="card-item">
+          <div class="card-item swiper-slide">
             <img src="images/img-5.jpg" alt="user image" class="user-image" />
             <h2 class="user-name">Jame</h2>
             <p class="user-profession">Java developer</p>
             <button class="message-button">message</button>
           </div>
-          <div class="card-item">
+          <div class="card-item swiper-slide">
             <img src="images/img-6.jpg" alt="user image" class="user-image" />
             <h2 class="user-name">J-me</h2>
             <p class="user-profession">Data researcher</p>
             <button class="message-button">message</button>
           </div>
+          <!-- Swiper pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Swiper navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
+    <!--Linking SwiperJS JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--Linking custom JS-->
     <script src="script.js"></script>
   </body>
